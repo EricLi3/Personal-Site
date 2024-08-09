@@ -22,7 +22,7 @@ const AboutMe = () => {
         <p>
           You can click to see my
           <a
-            href="https://drive.google.com/file/d/1tc8ifFHdsWrBjNqb-FBXRFRdYgUvrsvZ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1eDjAOsPumTI2z4EHCRc2ZOyfxB1Z3swh/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
