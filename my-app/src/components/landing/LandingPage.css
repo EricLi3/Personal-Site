@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../../public/Images/background.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    width: 50%; /* Adjusted width */
+    height: 40%; /* Adjusted height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.icon-container.email {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.icon-container.linkedin {
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: white;
+}
+
+.icon-container.github {
+    background-color: #333; /* GitHub Black */
+    color: white;
+}
+
+.icon-container.resume {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+.icon-container:hover {
+    opacity: 0.8;
+}
+
+.intro-text {
+    color: black;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    font-size: 24px;
+    animation: pulse 2s infinite;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 10px;
+    width: 23px; /* Set equal width */
+    height: 23px; /* Set equal height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
