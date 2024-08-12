@@ -1,43 +1,33 @@
 import React from 'react';
+import { Button, Card, Row, Col } from 'react-bootstrap';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './AboutMe.css'; // Ensure this path is correct
+
+import profileImage from '../../assets/profile.png'; // Ensure this path is correct
+import mhaccImage from '../../assets/MHACC.png';
 
 const AboutMe = () => {
   return (
     <div className="resume-container">
-      <div className="sidebar">
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </div>
       <div className="content">
         <section id="about">
           <br />
           <h1>About Me</h1>
-          <h3>
-            <b>Hi, I'm Eric</b>
+
+
+
+          <div className="about-me-image">
             <img
-              src="https://media.tenor.com/A7eequnhcGwAAAAM/hand.gif"
-              alt="wave"
-              width="50px"
-              height="50px"
-            />
-          </h3>
-          {/* // TODO: Add a profile picture with ciruclar thing and centered.  */}
-          {/* <div className="about-me-image">
-            <img
-              src="../images/profile.png"
+              src={profileImage}
               alt="profile"
-              width="500"
-              height="500px"
+              className="profile-picture"
             />
-          </div> */}
+          </div>
 
           <p>
-            I'm a Junior at <b>Worcester Polytechnic Institute</b>. I'm currently studying <b>Computer
-              Science</b> and have an interest in all aspects of programming. I also enjoy being <b>outdoors</b> and <b>gaming</b> like many others.
+            I am actively looking for Summer 2025 internships in software engineering, DevOps, and data science, so please feel free to reach out to me via email at ekli@wpi.edu if you are actively recruiting!
+          </p>
+          <p>I am a rising junior pursuing a Bachelor of Science degree in Computer Science at Worcester Polytechnic Institute along with a minor in Data Science. Throughout my academic and professional journey, I have gained experience in various programming languages including Java, C, C++, JS, and Python. In addition, I have a strong background in problem-solving and DSA.
           </p>
           <p>
             You can click to see my
@@ -46,19 +36,43 @@ const AboutMe = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <strong style={{ color: 'black' }}> resume </strong>
+              <strong style={{ color: 'white' }}> resume </strong>
             </a>
             or check out ways to contact me below.
           </p>
         </section>
+
+
         <section id="projects">
           <h1>Projects</h1>
-          <div className="project">
-            <img src="project-image-url" alt="Project" />
-            <p>Project description...</p>
+          <div className="projects-container">
+            <div className="project">
+              <Card style={{ width: '18rem', height:'20rem', margin: '10px' }}>
+                <Card.Img variant="top" src={mhaccImage} style={{ height: '150px', objectFit: 'cover' }} />
+                <Card.Body>
+                  <Card.Title>Mental Health Platform</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="project">
+              <Card style={{ width: '18rem', height:'20rem', margin: '10px' }}>
+                <Card.Img variant="top" src={mhaccImage} style={{ height: '150px', objectFit: 'cover' }} />
+                <Card.Body>
+                  <Card.Title>Mental Health Platform</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
           </div>
-          {/* Add more projects as needed */}
         </section>
+
         <section id="experience">
           <h1>Experience</h1>
           <p>Experience details...</p>

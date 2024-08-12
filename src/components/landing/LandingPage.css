@@ -4,12 +4,12 @@ body {
 }
 
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../../../public/Images/background.png'); /* Replace with your image path */
+    display: flex   !important;
+    flex-direction: column  !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh   !important;
+    background-image: url('../../assets/wpi-campus-historical.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +17,7 @@ body {
 
 .card {
     background-color: white;
+    opacity: 80%;
     padding: 40px;
     width: 50%; /* Adjusted width */
     height: 40%; /* Adjusted height */
@@ -71,7 +72,7 @@ body {
     transform: scale(1.1); /* Scale up slightly */
 }
 
-.intro-text {
+.welcome-text {
     color: black;
 }
 
@@ -89,6 +90,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.p{
+    color: black;
 }
 
 @keyframes pulse {
