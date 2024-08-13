@@ -45,9 +45,10 @@ const AboutMe = () => {
               />
             </div>
             <p>
-              I am actively looking for Summer 2025 internships in software engineering, DevOps, and data science, so please feel free to reach out to me via email at ekli@wpi.edu if you are actively recruiting!
+              I am actively looking for Summer 2025 internships in <b>software engineering, DevOps, and data science, </b> so please feel free to reach out to me via email at ekli@wpi.edu if you are actively recruiting!
             </p>
-            <p>I am a rising junior pursuing a Bachelor of Science degree in Computer Science at Worcester Polytechnic Institute along with a minor in Data Science. Throughout my academic and professional journey, I have gained experience in various programming languages including Java, C, C++, JS, and Python. In addition, I have a strong background in problem-solving and DSA.
+            <p>
+              I am a <b><span style={{ color: 'crimson' }}>Junior</span> pursuing a <span style={{ color: 'crimson' }}>Bachelor of Science</span> degree in <span style={{ color: 'crimson' }}>Computer Science</span> at <span style={{ color: 'crimson' }}>Worcester Polytechnic Institute</span></b> along with a <b>minor in <span style={{ color: 'crimson' }}>Data Science</span>.</b> Throughout my academic and professional journey, I have gained experience in various programming languages including <b>Java, C, C++, JS, and Python </b>. In addition, I have a strong background in <b>problem-solving and DSA.</b>
             </p>
             <p>
               You can click to see my
