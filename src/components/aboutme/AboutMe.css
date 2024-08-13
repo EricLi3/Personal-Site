@@ -5,7 +5,7 @@ body {
 
 .resume-container {
   
-  background-color: #1a1919;
+  background-color: #000000;
 }
 .about-me-image {
   display: flex;
@@ -25,7 +25,7 @@ body {
   padding: 20px;
   overflow-y: auto;
   height: 100%;
-  background-color: #1a1919;
+  background-color: #000000;
   scroll-behavior: smooth;
 }
 
@@ -45,19 +45,19 @@ h1 {
   margin: 0 auto; /* Center the container horizontally */
 }
 
-.project {
-  border: 1px solid #0f0e0e;
-  padding: 10px;
-  margin-bottom: 20px;
-  background-color: #1a1919;
-  flex: 1 1 calc(50% - 40px); /* Adjust the width of the cards */
-}
-
 .project img {
   max-width: 100%;
   height: auto;
   display: block;
   margin-bottom: 10px;
+}
+
+.card-hover {
+  transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
 }
 
 a {
