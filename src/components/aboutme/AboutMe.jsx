@@ -53,7 +53,7 @@ const AboutMe = () => {
             <p>
               You can click to see my
               <a
-                href="https://drive.google.com/file/d/1iZwE2BqpkABN22T4Qd6E4CCWJkDm9q81/view?usp=sharing"
+                href="https://drive.google.com/file/d/1NzWtyB3zWbgLZV12z3AAnDjgqNlNK2K3/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -203,7 +203,7 @@ const AboutMe = () => {
             <p>Email: <a href="mailto:ekli@wpi.edu">ekli@wpi.edu</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-li-2376a3219/" target="_blank" rel="noopener noreferrer">Eric Li</a></p>
             <p>GitHub: <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer">EricLi3</a></p>
-            <p>Resume: <a href="https://drive.google.com/file/d/1iZwE2BqpkABN22T4Qd6E4CCWJkDm9q81/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a></p>
+            <p>Resume: <a href="https://drive.google.com/file/d/1NzWtyB3zWbgLZV12z3AAnDjgqNlNK2K3/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a></p>
           </section>
         </div>
       </div>
