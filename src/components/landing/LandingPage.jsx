@@ -2,10 +2,12 @@ import React from 'react';
 import './LandingPage.css'; // Ensure this path is correct
 import { FaEnvelope, FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 import logo from '../../assets/wpilogo.png'; // Ensure this path is correct
+import NavBar from '../navbar/NavBar';
 
 const LandingPage = () => {
     return (
         <div className="landing-container">
+
             <div className="card">
                 <h1 className="intro-text">Hi, I'm Eric!</h1>
                 <img
@@ -15,7 +17,7 @@ const LandingPage = () => {
                     height="50px"
                 ></img>
 
-                <p className="welcome-text"><i>Welcome to my cozy space on the Internet.</i></p>
+                <p className="welcome-text">CS & DS at Worcester Polytechnic Institute</p>
 
                 <img
                     src= {logo}
@@ -34,7 +36,7 @@ const LandingPage = () => {
                     <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer" className="icon-container github">
                         <FaGithub size={40} />
                     </a>
-                    <a href="https://drive.google.com/file/d/1NzWtyB3zWbgLZV12z3AAnDjgqNlNK2K3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="icon-container resume">
+                    <a href="https://drive.google.com/file/d/1dXMSJiY6vmPBTpN42xj1i7Nh2pG7MzFr/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="icon-container resume">
                         <FaFileAlt size={40} />
                     </a>
                 </div>

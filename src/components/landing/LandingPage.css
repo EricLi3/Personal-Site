@@ -4,12 +4,13 @@ body {
 }
 
 .landing-container {
-    display: flex   !important;
-    flex-direction: column  !important;
+    display: flex !important;
+    flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    height: 100vh   !important;
-    background-image: url('../../assets/wpi-campus-historical.jpg'); /* Replace with your image path */
+    height: 100vh !important;
+    background-image: url('../../assets/wpi-campus-historical.jpg');
+    /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,8 +20,10 @@ body {
     background-color: white;
     opacity: 80%;
     padding: 40px;
-    width: 50%; /* Adjusted width */
-    height: 40%; /* Adjusted height */
+    width: 50%;
+    /* Adjusted width */
+    height: 40%;
+    /* Adjusted height */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -48,32 +51,42 @@ body {
 }
 
 .icon-container.email {
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
+    /* Red */
     color: white;
 }
 
 .icon-container.linkedin {
-    background-color: #0077b5; /* LinkedIn Blue */
+    background-color: #0077b5;
+    /* LinkedIn Blue */
     color: white;
 }
 
 .icon-container.github {
-    background-color: #333; /* GitHub Black */
+    background-color: #333;
+    /* GitHub Black */
     color: white;
 }
 
 .icon-container.resume {
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50;
+    /* Green */
     color: white;
 }
 
 .icon-container:hover {
     opacity: 0.8;
-    transform: scale(1.1); /* Scale up slightly */
+    transform: scale(1.1);
+    /* Scale up slightly */
 }
 
 .welcome-text {
-    color: black;
+
+    font-size: 35px;
+    background: -webkit-linear-gradient(#0077b5, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .scroll-down {
@@ -85,13 +98,16 @@ body {
     background-color: whitesmoke;
     border-radius: 50%;
     padding: 10px;
-    width: 23px; /* Set equal width */
-    height: 23px; /* Set equal height */
+    width: 23px;
+    /* Set equal width */
+    height: 23px;
+    /* Set equal height */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.p{
+
+.p {
     color: black;
 }
 
@@ -99,9 +115,11 @@ body {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0);
     }

@@ -6,6 +6,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './AboutMe.css'; // Ensure this path is correct
+import { FaEnvelope, FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
+
 
 import profileImage from '../../assets/profile.png'; // Ensure this path is correct
 import mhaccImage from '../../assets/MHACC.png';
@@ -19,49 +21,52 @@ import radicalAI from '../../assets/radicalAI.png';
 
 const AboutMe = () => {
   return (
-    <div style={{ display: 'flex' }}>
-      <Navbar bg="dark" variant="dark" className="flex-column" style={{ height: '100vh', position: 'fixed', width: '200px' }}>
-        <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
-        <Nav className="flex-column">
-          <Nav.Link href="#skills" style={{ color: 'white' }}>Skills</Nav.Link>
-          <Nav.Link href="#projects" style={{ color: 'white' }}>Projects</Nav.Link>
-          <Nav.Link href="#experience" style={{ color: 'white' }}>Experience</Nav.Link>
-          <Nav.Link href="#contact" style={{ color: 'white' }}>Contact</Nav.Link>
-        </Nav>
-      </Navbar>
+    <div style={{ display: 'flex' }} >
+      <div className="navbar" style={{ display: 'flex' }}>
+        <Navbar class ="flex-column">
+          <Nav className="flex-column">
+            <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
+            <Nav.Link href="#skills" style={{ color: 'white' }}>Skills</Nav.Link>
+            <Nav.Link href="#projects" style={{ color: 'white' }}>Projects</Nav.Link>
+            <Nav.Link href="#experience" style={{ color: 'white' }}>Experience</Nav.Link>
+            <Nav.Link href="#contact" style={{ color: 'white' }}>Contact</Nav.Link>
+          </Nav>
+        </Navbar>
 
       <div className="resume-container" style={{ padding: '20px', width: '100%' }}>
 
-        <div className="content">
-          <section id="about">
-            <br />
-            <h1>About Me</h1>
+          <div className="aboutMe">
+            <section id="about">
+              <br />
+              <h1>About Me</h1>
 
-            <div className="about-me-image">
-              <img
-                src={profileImage}
-                alt="profile"
-                className="profile-picture"
-              />
-            </div>
-            <p>
-              I am actively looking for Summer 2025 internships in <b>software engineering, DevOps, and data science, </b> so please feel free to reach out to me via email at ekli@wpi.edu if you are actively recruiting!
-            </p>
-            <p>
-              I am a <b><span style={{ color: 'crimson' }}>Junior</span> pursuing a <span style={{ color: 'crimson' }}>Bachelor of Science</span> degree in <span style={{ color: 'crimson' }}>Computer Science</span> at <span style={{ color: 'crimson' }}>Worcester Polytechnic Institute</span></b> along with a <b>minor in <span style={{ color: 'crimson' }}>Data Science</span>.</b> Throughout my academic and professional journey, I have gained experience in various programming languages including <b>Java, C, C++, JS, and Python </b>. In addition, I have a strong background in <b>problem-solving and DSA.</b>
-            </p>
-            <p>
-              You can click to see my
-              <a
-                href="https://drive.google.com/file/d/1NzWtyB3zWbgLZV12z3AAnDjgqNlNK2K3/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong style={{ color: 'white' }}> resume </strong>
-              </a>
-              or check out ways to contact me below.
-            </p>
-          </section>
+              <div className="about-me-image">
+                <img
+                  src={profileImage}
+                  alt="profile"
+                  className="profile-picture"
+                />
+              </div>
+
+              <p>
+                I am actively looking for Summer 2025 internships in <b>software engineering, DevOps, and data science, </b> so please feel free to reach out to me via email at ekli@wpi.edu if you are actively recruiting!
+              </p>
+              <p>
+                I am a <b><span style={{ color: 'crimson' }}>Junior</span> pursuing a <span style={{ color: 'crimson' }}>Bachelor of Science</span> degree in <span style={{ color: 'crimson' }}>Computer Science</span> at <span style={{ color: 'crimson' }}>Worcester Polytechnic Institute</span></b> along with a <b>minor in <span style={{ color: 'crimson' }}>Data Science</span>.</b> Throughout my academic and professional journey, I have gained experience in various programming languages including <b>Java, C, C++, JS, and Python </b>. In addition, I have a strong background in <b>problem-solving and DSA.</b>
+              </p>
+              <p>
+                You can click to see my
+                <a
+                  href="https://drive.google.com/file/d/1dXMSJiY6vmPBTpN42xj1i7Nh2pG7MzFr/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong style={{ color: 'white' }}> resume </strong>
+                </a>
+                or check out ways to contact me below.
+              </p>
+            </section>
+          </div>
 
           <section id="skills">
             <h1>Skills</h1>
@@ -198,13 +203,15 @@ const AboutMe = () => {
             </div>
           </section>
 
-          <section id="contact">
-            <h1>Contact Me</h1>
-            <p>Email: <a href="mailto:ekli@wpi.edu">ekli@wpi.edu</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-li-2376a3219/" target="_blank" rel="noopener noreferrer">Eric Li</a></p>
-            <p>GitHub: <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer">EricLi3</a></p>
-            <p>Resume: <a href="https://drive.google.com/file/d/1NzWtyB3zWbgLZV12z3AAnDjgqNlNK2K3/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a></p>
-          </section>
+          <div className="footer">
+            <section id="contact">
+              <h2 class="title"> Contact Me </h2>
+              <p>Email: <a href="mailto:ekli@wpi.edu">ekli@wpi.edu</a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-li-2376a3219/" target="_blank" rel="noopener noreferrer">Eric Li</a></p>
+              <p>GitHub: <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer">EricLi3</a></p>
+              <p>Resume: <a href="https://drive.google.com/file/d/1dXMSJiY6vmPBTpN42xj1i7Nh2pG7MzFr/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a></p>
+            </section>
+          </div>
         </div>
       </div>
     </div>

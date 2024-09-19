@@ -2,16 +2,30 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .resume-container {
   
-  background-color: #000000;
+  background-color: #181719;
 }
 .about-me-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.aboutMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* font-size: 1.5em; */
+  padding: 20px;
+  text-align: center;
+  background-color: #181719;
+}
+
 
 .profile-picture{
   width: 350px;
@@ -25,8 +39,25 @@ body {
   padding: 20px;
   overflow-y: auto;
   height: 100%;
-  background-color: #000000;
+  background-color: #181719;
   scroll-behavior: smooth;
+}
+.card-hover{
+  transition: transform 0.3s ease;
+  width: 30%;
+    position: relative;
+    background: var(--color-light-grey);
+    border-radius: 20px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: 1;
+    padding: 3%;
+    opacity: 70%;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    text-align: center;
 }
 
 section {
@@ -72,3 +103,37 @@ p {
   margin: 10px 0;
   color: rgb(229 231 235);
 }
+
+.flex-column {
+  position: fixed; /* or 'absolute' depending on behavior */
+  height: 40px;
+  padding-top: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* ensure it's on top */
+  background-color: #7d2030; /* make sure background is visible */
+  box-shadow: 0 4px 2px -2px gray; /* optional, for a shadow effect */
+}
+
+.title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.footer {
+  position: relative;
+  background: #7d2030 ;
+  z-index: 1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 4% 8%;
+  text-align: left;
+}
+
+.footer-content {
+  margin-left: 20px; /* Add some margin to the left for spacing */
+} 
