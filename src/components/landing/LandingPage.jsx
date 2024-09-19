@@ -2,7 +2,6 @@ import React from 'react';
 import './LandingPage.css'; // Ensure this path is correct
 import { FaEnvelope, FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 import logo from '../../assets/wpilogo.png'; // Ensure this path is correct
-import NavBar from '../navbar/NavBar';
 
 const LandingPage = () => {
     return (
